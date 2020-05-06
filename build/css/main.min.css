@@ -478,6 +478,29 @@ section {
     border: 1px solid #000;
     background-color: #fff; }
 
+.best-work__title {
+  margin-bottom: 97px; }
+
+.best-work-row {
+  margin-bottom: 17px;
+  flex-wrap: wrap; }
+
+.best-work__item {
+  width: 350px;
+  height: 364px;
+  margin-bottom: 30px;
+  background: #e5e5e5 url("../img/best-work-img.jpg") no-repeat center/cover; }
+  .best-work__item--big {
+    height: 590px; }
+  @media (max-width: 1130px) {
+    .best-work__item {
+      width: 500px; } }
+
+.best-work__block {
+  text-align: center; }
+
+.header {
+  padding: 63px 0 70px 0; }
 .main__item-wrap {
   display: flex;
   margin-bottom: 93px; }

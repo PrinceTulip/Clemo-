@@ -1,0 +1,27 @@
+.best-work__title {
+  margin-bottom: 97px;
+}
+
+.best-work-row {
+  margin-bottom: 17px;
+  flex-wrap: wrap;
+}
+
+.best-work__item {
+  width: 350px;
+  height: 364px;
+  margin-bottom: 30px;
+  background: #e5e5e5 url("../img/best-work-img.jpg") no-repeat center/cover;
+
+  &--big {
+    height: 590px;
+  }
+
+  @media (max-width: 1130px) {
+    width: 500px;
+  }
+}
+
+.best-work__block {
+  text-align: center;
+}
