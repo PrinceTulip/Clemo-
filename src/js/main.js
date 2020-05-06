@@ -5,7 +5,8 @@ window.addEventListener('DOMContentLoaded', () => {
   const msnry = new Masonry( grid, {
     // options...
     itemSelector: '.best-work__item',
-    columnWidth: 364
+    columnWidth: 364,
+    percentPosition: true
   });
 
   const slider = () => {

@@ -461,15 +461,15 @@ img {
   flex-wrap: wrap; }
 
 .best-work__item {
-  display: flex;
   width: 350px;
   height: 364px;
   margin-bottom: 30px;
-  background-color: #e5e5e5;
-  align-items: center;
-  justify-content: center; }
+  background: #e5e5e5 url("../img/best-work-img.jpg") no-repeat center/cover; }
   .best-work__item--big {
     height: 590px; }
+  @media (max-width: 1130px) {
+    .best-work__item {
+      width: 500px; } }
 
 .best-work__block {
   text-align: center; }
