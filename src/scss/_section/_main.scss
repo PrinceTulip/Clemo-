@@ -1,0 +1,37 @@
+.main__item-wrap {
+  display: flex;
+  margin-bottom: 93px;
+}
+
+.main__item {
+  width: 42%;
+  margin-right: 95px;
+}
+
+.main__title {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.main__span {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.main__sub-title .sub-title {
+  position: relative;
+  padding-bottom: 60px;
+
+  &:after {
+    bottom: 45px;
+    left: 0;
+  }
+}
+
+.main__desc {
+  font-size: 18px;
+  color: $gray;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+

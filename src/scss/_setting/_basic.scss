@@ -52,12 +52,34 @@ img {
   display: flex;
 }
 
+section {
+  margin: 90px 0;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+}
+
 .sub-title {
+  position: relative;
   font-size: 48px;
+
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: -35px;
+    left: 40%;
+    width: 55px;
+    height: 2px;
+    background-color: $black;
+  }
 }
 
 .btn {
-  padding: 18px 32px;
+  display: inline-block;
+  padding: 15px 42px;
   background: $black;
   font-size: 18px;
   text-decoration: none;
@@ -66,7 +88,6 @@ img {
   font-weight: 300;
   cursor: pointer;
   border: transparent;
-
 
   &:hover {
     background-color: $skin;
@@ -77,4 +98,16 @@ img {
   &:focus {
     outline: none;
   }
+
+  &--white {
+    background-color: $white;
+    color: $black;
+    border: 1px solid $gray;
+  }
+
+  &--white:hover {
+    border: 1px solid $black;
+    background-color: $white;
+  }
+
 }
