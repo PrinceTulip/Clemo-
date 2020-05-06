@@ -1,6 +1,5 @@
-.main__item-wrap {
-  display: flex;
-  margin-bottom: 93px;
+.main-row {
+  margin: 93px 0;
 }
 
 .main__item {
@@ -19,7 +18,6 @@
 }
 
 .main__sub-title .sub-title {
-  position: relative;
   padding-bottom: 60px;
 
   &:after {

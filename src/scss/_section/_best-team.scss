@@ -1,0 +1,78 @@
+.best-team-row {
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.best-team {
+  background: $wheat;
+  padding-top: 86px;
+}
+
+
+.best-team__content {
+  display: flex;
+  align-items: center;
+}
+
+
+.best-team__item {
+
+  text-align: center;
+  margin-right: 125px;
+  width: 33.3%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.best-team__title {
+  padding-bottom: 100px;
+}
+
+.best-team .sub-title {
+  padding-bottom: 35px;
+
+  &:after {
+    bottom: 15px;
+    left: 42%;
+  }
+}
+
+
+
+.best-team button {
+  position: absolute;
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  border-color: $black;
+  bottom: -416%;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  z-index: 20;
+
+}
+
+.best-team__prevSelector {
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  transform: rotate(45deg);
+  border-right: 0;
+  border-top: 0;
+  background: transparent;
+  left: 50px;
+
+}
+
+.best-team__nextSelector {
+  border-top: 2px solid;
+  border-left: 0;
+  border-right: 2px solid;
+  border-bottom: 0;
+  transform: rotate(45deg);
+  right: 50px;
+  background: transparent;
+
+}

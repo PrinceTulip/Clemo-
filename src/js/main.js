@@ -1,23 +1,60 @@
 const Masonry = require('masonry-layout');
+const slick = require('slick-carousel');
+
 window.addEventListener('DOMContentLoaded', () => {
 
   const grid = document.querySelector('.best-work-row');
-  const msnry = new Masonry( grid, {
+  const msnry = new Masonry(grid, {
     // options...
     itemSelector: '.best-work__item',
     columnWidth: 364,
     percentPosition: true
   });
 
+
+  $(".slider").slick({
+
+    // normal options...
+    infinite: false,
+
+    // the magic
+    responsive: [{
+
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        infinite: true
+      }
+
+    }, {
+
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        dots: true
+      }
+
+    }, {
+
+      breakpoint: 300,
+      settings: "unslick" // destroys slick
+
+    }]
+  });
+
+  $('.single-item').slick();
+
+
   const slider = () => {
 
-    function bindSlider(slidesSelector, prevSelector, nextSelector, dotsSelector, activeDotSelector) {
+    function bindSlider(slidesSelector, prevSelector, nextSelector, dotsSelector, activeDotSelector, slideDirection, ) {
       const slides = Array.prototype.slice.call(document.querySelectorAll(slidesSelector));
       createDots();
       const prev = document.querySelector(prevSelector);
       const next = document.querySelector(nextSelector);
       const dots = Array.prototype.slice.call(document.querySelectorAll(dotsSelector));
       const activeDot = activeDotSelector;
+      const sliderAnimate = slideDirection;
       let slideIndx = 1;
       let pause = null;
 
@@ -55,10 +92,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
         slides.forEach((item) => {
           item.style.display = 'none';
-          item.classList.add('slideInUp');
+          item.classList.remove(sliderAnimate);
         });
         slides[n - 1].style.display = 'block';
-        slides[n - 1].classList.add('slideInUp');
+        slides[n - 1].classList.add(sliderAnimate);
         try {
           dots[n - 1].classList.add(activeDot);
         } catch (e) {
@@ -99,12 +136,18 @@ window.addEventListener('DOMContentLoaded', () => {
         autoPlay();
       });
 
-      //autoPlay();
+      autoPlay();
       showSlide(slideIndx)
     }
 
-    bindSlider('.slider-item', '.control__left', '.control__right', '.control__dot', 'control__dot--active')
+    bindSlider('.promo__item', '.control__left', '.control__right', '.control__dot', 'control__dot--active', 'slideInUp' )
+
+    bindSlider('.best-team__item-wrap', '.best-team__prevSelector', '.best-team__nextSelector', '.control__dot', 'control__dot--active', 'slideInRight')
   };
+
+
   slider();
-  });
+})
+
+
 
