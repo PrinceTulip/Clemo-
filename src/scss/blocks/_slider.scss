@@ -1,6 +1,6 @@
-@keyframes slideInRight {
+@keyframes slideInUp {
   from {
-    transform: translate3d(100%, 0, 0);
+    transform: translate3d(0, 100%, 0);
     visibility: visible;
   }
 
@@ -8,9 +8,10 @@
     transform: translate3d(0, 0, 0);
   }
 }
-.slideInRight {
-  animation-name: slideInRight;
-  animation-duration: 0.5s;
+
+.slideInUp {
+  animation-name: slideInUp;
+  animation-duration: 0.4s;
 }
 
 .control {

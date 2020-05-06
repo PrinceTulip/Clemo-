@@ -45,10 +45,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
         slides.forEach((item) => {
           item.style.display = 'none';
-          item.classList.add('slideInRight');
+          item.classList.add('slideInUp');
         });
         slides[n - 1].style.display = 'block';
-        slides[n - 1].classList.add('slideInRight');
+        slides[n - 1].classList.add('slideInUp');
         try {
           dots[n - 1].classList.add(activeDot);
         } catch (e) {
