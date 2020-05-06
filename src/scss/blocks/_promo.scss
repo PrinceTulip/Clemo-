@@ -1,0 +1,35 @@
+.promo {
+  background-color: $wheat;
+  padding: 138px 0 108px 0;
+}
+
+.promo-row {
+  justify-content: center;
+}
+
+.promo__sub-title {
+  position: relative;
+  margin-bottom: 60px;
+
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: -35px;
+    left: 40%;
+    width: 55px;
+    height: 2px;
+    background-color: $black;
+  }
+
+}
+
+.promo__desc {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.promo__button-block {
+  text-align: center;
+}

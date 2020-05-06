@@ -1,0 +1,48 @@
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideInRight {
+  animation-name: slideInRight;
+  animation-duration: 0.5s;
+}
+
+.control {
+  position: absolute;
+  bottom: 44%;
+  left: 96%;
+}
+
+.control__dot {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  border: 1px solid $black;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 17px;
+
+
+  &--active {
+    background-color: $black;
+    border: transparent;
+  }
+
+}
+
+.control__dots {
+
+  & button {
+    border: solid $white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+  }
+
+}
