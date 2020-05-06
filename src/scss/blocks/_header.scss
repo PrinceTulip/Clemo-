@@ -2,33 +2,7 @@
   padding: 63px 0 70px 0;
 }
 
-
 .header-row {
   justify-content: space-between;
   align-items: center;
-}
-
-.header-navigation__list {
-  display: flex;
-}
-
-.header-navigation__item {
-  margin-right: 30px;
-}
-
-.header-navigation__link {
-  position: relative;
-  display: inline-block;
-  color: $gray;
-
-  &:hover::before {
-    position: absolute;
-    content: '';
-    bottom: -5px;
-    left: 0;
-    width: 50%;
-    height: 2px;
-    background-color: $black;
-  }
-
 }

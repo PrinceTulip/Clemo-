@@ -10,17 +10,6 @@
 .promo__sub-title {
   position: relative;
   margin-bottom: 60px;
-
-  &:after {
-    position: absolute;
-    content: '';
-    bottom: -35px;
-    left: 40%;
-    width: 55px;
-    height: 2px;
-    background-color: $black;
-  }
-
 }
 
 .promo__desc {
