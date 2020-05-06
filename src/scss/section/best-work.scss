@@ -1,0 +1,26 @@
+.best-work__title {
+  margin-bottom: 97px;
+}
+
+.best-work-row {
+  margin-bottom: 17px;
+  flex-wrap: wrap;
+}
+
+.best-work__item {
+  display: flex;
+  width: 350px;
+  height: 364px;
+  margin-bottom: 30px;
+  background-color: #e5e5e5;
+  align-items: center;
+  justify-content: center;
+
+  &--big {
+    height: 590px;
+  }
+}
+
+.best-work__block {
+  text-align: center;
+}

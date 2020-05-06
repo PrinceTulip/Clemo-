@@ -1,4 +1,13 @@
+const Masonry = require('masonry-layout');
 window.addEventListener('DOMContentLoaded', () => {
+
+  const grid = document.querySelector('.best-work-row');
+  const msnry = new Masonry( grid, {
+    // options...
+    itemSelector: '.best-work__item',
+    columnWidth: 364
+  });
+
   const slider = () => {
 
     function bindSlider(slidesSelector, prevSelector, nextSelector, dotsSelector, activeDotSelector) {
