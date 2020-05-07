@@ -1,0 +1,30 @@
+.best-team-row {
+  padding-bottom: 50px;
+}
+
+.best-team {
+  background: $wheat;
+  padding: 86px 0 160px 0;
+}
+
+.best-team__item {
+  text-align: center;
+}
+
+.best-item__img img {
+  border-radius: 50%;
+}
+
+.best-team__title {
+  padding-bottom: 100px;
+}
+
+.best-team .sub-title {
+  padding-bottom: 35px;
+
+  &:after {
+    bottom: 15px;
+    left: 42%;
+  }
+}
+
