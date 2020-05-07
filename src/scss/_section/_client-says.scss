@@ -1,0 +1,49 @@
+.client-says {
+  padding: 90px 0 190px 0;
+}
+
+.client-says-row {
+  justify-content: center;
+}
+
+.client-says__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 87px;
+}
+
+.client-says-bio {
+  margin-right: 96px;
+}
+
+.client-says__desc {
+  width: 40%;
+  color: $gray;
+}
+
+.client-says__title {
+  margin-bottom: 87px;
+}
+
+.client-says__sub-title {
+  margin-bottom: 36px;
+}
+
+.client-says .sub-title {
+
+  &:after {
+    bottom: -20px;
+    left: 77.5%;
+  }
+
+}
+
+.client-says__post {
+  text-align: right;
+}
+
+.client-says-slider__img img {
+  max-width: 92%;
+}
+
