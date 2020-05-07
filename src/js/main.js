@@ -25,6 +25,21 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   $(document).ready(function(){
+    $('.client-says-slider').slick({
+      arrows: false,
+      dots: true,
+      autoplay: true,
+      pauseOnFocus: true,
+      pauseOnHover: true,
+      pauseOnDotsHover: true,
+      waitForAnimate: false,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+
+    });
+  });
+
+  $(document).ready(function(){
     $('.best-team-slider').slick({
       arrows: true,
       dots: true,

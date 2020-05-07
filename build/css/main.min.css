@@ -500,6 +500,41 @@ img {
     bottom: 15px;
     left: 42%; }
 
+.client-says {
+  padding: 90px 0 190px 0; }
+
+.client-says-row {
+  justify-content: center; }
+
+.client-says__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 87px; }
+
+.client-says-bio {
+  margin-right: 96px; }
+
+.client-says__desc {
+  width: 40%;
+  color: #989898; }
+
+.client-says__title {
+  margin-bottom: 87px; }
+
+.client-says__sub-title {
+  margin-bottom: 36px; }
+
+.client-says .sub-title:after {
+  bottom: -20px;
+  left: 77.5%; }
+
+.client-says__post {
+  text-align: right; }
+
+.client-says-slider__img img {
+  max-width: 92%; }
+
 .main-row {
   margin: 93px 0; }
 
@@ -639,6 +674,34 @@ img {
   .best-team-slider .slick-arrow.slick-next:hover {
     border-color: #fff;
     transition: 0.3s; }
+
+.client-says-slider {
+  position: relative;
+  min-width: 0; }
+
+.client-says-slider .slick-dots {
+  position: absolute;
+  display: flex;
+  bottom: -31%;
+  right: 42%; }
+
+.client-says-slider .slick-dots li {
+  list-style: none;
+  margin-right: 17px; }
+
+.client-says-slider .slick-dots button {
+  font-size: 0;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background: transparent;
+  cursor: pointer; }
+  .client-says-slider .slick-dots button:focus {
+    outline: none; }
+
+.client-says-slider .slick-dots .slick-active button {
+  background-color: #000; }
 
 .header-navigation__list {
   display: flex; }
