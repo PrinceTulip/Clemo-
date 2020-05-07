@@ -1,0 +1,88 @@
+.best-team-slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+}
+
+.best-team-slider .slick-slide {
+  width: 285px;
+}
+
+
+.best-team-slider .slick-dots {
+  position: absolute;
+  display: flex;
+  bottom: -31%;
+  right: 42%;
+}
+
+.best-team-slider .slick-dots li {
+  list-style: none;
+  margin-right: 17px;
+}
+
+.best-team-slider .slick-dots button {
+  font-size: 0;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1px solid $black;
+  background: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.best-team-slider .slick-dots .slick-active button {
+  background-color: $black;
+}
+
+.best-team-slider .slick-arrow {
+  position: absolute;
+  display: inline-block;
+  top: 24%;
+  z-index: 10;
+  width: 30px;
+  height: 30px;
+  border-color: $black;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 0;
+}
+
+.best-team-slider .slick-arrow.slick-prev {
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  transform: rotate(45deg);
+  border-right: 0;
+  border-top: 0;
+  background: transparent;
+  left: -20px;
+
+  &:hover {
+    border-color: $white;
+    transition: 0.3s;
+  }
+
+}
+
+.best-team-slider .slick-arrow.slick-next {
+  border-top: 2px solid;
+  border-left: 0;
+  border-right: 2px solid;
+  border-bottom: 0;
+  transform: rotate(45deg);
+  right: -20px;
+  background: transparent;
+
+  &:hover {
+    border-color: $white;
+    transition: 0.3s;
+  }
+
+}

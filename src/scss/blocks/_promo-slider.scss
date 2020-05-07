@@ -1,0 +1,50 @@
+.promo-slider {
+  position: relative;
+  min-width: 0;
+  text-align: center;
+}
+
+.promo-slider .slick-dots {
+  position: absolute;
+  top: 30%;
+  right: 2%;
+}
+
+.promo-slider .slick-dots li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.promo-slider .slick-dots button {
+  font-size: 0;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1px solid $black;
+  background: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.promo-slider .slick-dots .slick-active button {
+  background-color: $black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
