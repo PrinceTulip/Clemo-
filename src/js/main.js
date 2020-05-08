@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const msnry = new Masonry(grid, {
     // options...
     itemSelector: '.best-work__item',
-    columnWidth: 364,
+    columnWidth: '.best-work__item',
     percentPosition: true
   });
 
@@ -46,6 +46,12 @@ window.addEventListener('DOMContentLoaded', () => {
           breakpoint: 992,
           settings: {
             slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 490,
+          settings: {
+            slidesToShow: 1
           }
         }
 

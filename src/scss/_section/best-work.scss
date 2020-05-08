@@ -7,23 +7,34 @@
 }
 
 .best-work-row {
-  margin-bottom: 17px;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 17px;
+
+  .best-work__item {
+    width: calc(33% - 15px);
+    margin-right: 15px;
+    height: 364px;
+    background: url("../img/best-work-img.jpg") no-repeat center/cover;
+
+    &--big {
+      height: 590px;
+    }
+
+    @include tablets {
+      width: calc(50% - 10px);
+      margin-right: 10px;
+    }
+    @include phones {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
 }
 
 .best-work__item {
-  width: 350px;
-  height: 364px;
   margin-bottom: 30px;
-  background: #e5e5e5 url("../img/best-work-img.jpg") no-repeat center/cover;
-
-  &--big {
-    height: 590px;
-  }
-
-  @media (max-width: 1130px) {
-    width: 500px;
-  }
 }
 
 .best-work__block {
