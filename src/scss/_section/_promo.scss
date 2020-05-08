@@ -17,5 +17,10 @@
   font-weight: 300;
   text-align: center;
   margin-bottom: 80px;
+
+
+  @include small-phones {
+    font-size: 21px;
+  }
 }
 

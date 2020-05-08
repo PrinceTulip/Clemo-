@@ -75,7 +75,12 @@ img {
     width: 55px;
     height: 2px;
     background-color: $black;
+
+    @include phones {
+      display: none;
+    }
   }
+
 }
 
 .btn {

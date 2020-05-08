@@ -1,0 +1,72 @@
+.header__burger {
+  display:none;
+
+  @include tablets {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 63px;
+    padding-right: 10px;
+  }
+
+}
+
+.header__burger-button {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: $black;
+  width: 25px;
+  height: 3px;
+  z-index: 5;
+  transition: 0.3s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 3px;
+    background: $black;
+    top: 6px;
+    left: 0;
+    z-index: 5;
+    transition: 0.3s;
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 3px;
+    background: $black;
+    top: -6px;
+    left: 0;
+    z-index: 5;
+    transition: 0.3s;
+  }
+
+  &--active {
+    background: transparent;
+    transition: 0.3s;
+
+    &:after {
+      transform: translateY(5px) rotate(-45deg);
+      transition: 0.3s;
+      top: -5px;
+      background-color: $white;
+    }
+
+    &:before {
+      transform:  translateY(6px) rotate(45deg);
+      transition: 0.3s;
+      background-color: $white;
+    }
+
+  }
+
+}

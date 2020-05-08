@@ -8,11 +8,29 @@
   position: absolute;
   top: 30%;
   right: 2%;
+
+  @include tablets {
+    top: 112%;
+    right: 44%;
+    display: flex;
+  }
+
+  @include phones {
+    right: 38%;
+  }
+
+  @include small-phones {
+    right: 34%;
+  }
 }
 
 .promo-slider .slick-dots li {
   list-style: none;
   margin-bottom: 10px;
+
+  @include tablets {
+    margin-right: 10px;
+  }
 }
 
 .promo-slider .slick-dots button {
