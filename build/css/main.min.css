@@ -608,9 +608,16 @@ img {
 
 .main-item--order-second {
   order: 5; }
+  .main-item--order-second:first-child {
+    margin-right: 0; }
 
 .main-item--order-first {
   order: 4; }
+  .main-item--order-first:last-child {
+    margin-right: 95px; }
+    @media (max-width: 992px) {
+      .main-item--order-first:last-child {
+        margin-right: 45px; } }
 
 .promo {
   background-color: #ffe1bd;

@@ -82,8 +82,22 @@
 
 .main-item--order-second {
   order: 5;
+
+  &:first-child {
+    margin-right: 0;
+  }
+
 }
 
 .main-item--order-first {
   order: 4;
+
+  &:last-child {
+    margin-right: 95px;
+
+    @include laptop {
+      margin-right: 45px;
+    }
+  }
+
 }
