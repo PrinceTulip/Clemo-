@@ -897,3 +897,20 @@ img {
 
 .slick-track {
   display: flex; }
+
+.sub-footer {
+  padding: 45px 0; }
+
+.row-sub-footer {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.sub-footer__copyright {
+  font-weight: 700;
+  margin-bottom: 13px; }
+
+.sub-footer__rights {
+  font-size: 13px;
+  font-weight: 300;
+  color: #989898; }
