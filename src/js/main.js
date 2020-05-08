@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const msnry = new Masonry(grid, {
     // options...
     itemSelector: '.best-work__item',
-    columnWidth: 364,
+    columnWidth: '.best-work__item',
     percentPosition: true
   });
 
