@@ -705,8 +705,19 @@ img {
   .best-work-row .best-work__item {
     width: calc(33% - 15px);
     margin-right: 15px;
-    height: 364px;
-    background: url("../img/best-work-img.jpg") no-repeat center/cover; }
+    height: 364px; }
+    .best-work-row .best-work__item--1 {
+      background: url("../img/best-work-img1.jpg") no-repeat center/cover; }
+    .best-work-row .best-work__item--2 {
+      background: url("../img/best-work-img2.jpg") no-repeat center/cover; }
+    .best-work-row .best-work__item--3 {
+      background: url("../img/best-work-img3.jpg") no-repeat center/cover; }
+    .best-work-row .best-work__item--4 {
+      background: url("../img/best-work-img4.jpg") no-repeat center/cover; }
+    .best-work-row .best-work__item--5 {
+      background: url("../img/best-work-img5.jpg") no-repeat center/cover; }
+    .best-work-row .best-work__item--6 {
+      background: url("../img/best-work-img6.jpg") no-repeat center/cover; }
     .best-work-row .best-work__item--big {
       height: 590px; }
     @media (max-width: 768px) {
@@ -919,7 +930,7 @@ img {
     .footer__list {
       justify-content: center; } }
 
-.footer__list-item {
+.footer__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -928,11 +939,11 @@ img {
   height: 40px;
   background-color: #fff;
   border-radius: 50%; }
-  .footer__list-item:hover {
+  .footer__item:hover {
     background-color: #ffcb93;
     transition: 0.3s; }
   @media (max-width: 800px) {
-    .footer__list-item {
+    .footer__item {
       margin-right: 18px; } }
 
 .footer__list-link {
@@ -1152,6 +1163,9 @@ img {
 
 .slick-track {
   display: flex; }
+
+.slick-slide {
+  outline: none; }
 
 .sub-footer {
   padding: 45px 0; }
