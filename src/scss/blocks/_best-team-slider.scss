@@ -6,16 +6,23 @@
   min-width: 0;
 }
 
-.best-team-slider .slick-slide {
-  width: 285px;
-}
-
-
 .best-team-slider .slick-dots {
   position: absolute;
   display: flex;
   bottom: -31%;
   right: 42%;
+
+  @include tablets {
+    right: 40%;
+  }
+
+  @include phones {
+    right: 25%;
+  }
+
+  @include small-phones {
+    right: 20%;
+  }
 }
 
 .best-team-slider .slick-dots li {
@@ -44,7 +51,7 @@
 .best-team-slider .slick-arrow {
   position: absolute;
   display: inline-block;
-  top: 24%;
+  top: 22%;
   z-index: 10;
   width: 30px;
   height: 30px;
@@ -53,6 +60,11 @@
   cursor: pointer;
   outline: none;
   font-size: 0;
+
+  @include laptop {
+    z-index: -1;
+  }
+
 }
 
 .best-team-slider .slick-arrow.slick-prev {

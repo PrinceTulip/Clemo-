@@ -7,7 +7,21 @@
   position: absolute;
   display: flex;
   bottom: -31%;
-  right: 42%;
+  right: 45%;
+
+  @include tablets {
+    right: 42%;
+    bottom: -61%;
+  }
+
+  @include phones {
+    right: 25%;
+    bottom: -90%;
+  }
+
+  @include small-phones {
+    right: 18%;
+  }
 }
 
 .client-says-slider .slick-dots li {

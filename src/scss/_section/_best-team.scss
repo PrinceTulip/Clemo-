@@ -1,5 +1,6 @@
 .best-team-row {
   padding-bottom: 50px;
+  justify-content: center;
 }
 
 .best-team {
@@ -11,12 +12,21 @@
   text-align: center;
 }
 
-.best-item__img img {
-  border-radius: 50%;
+.best-item__img {
+  margin-bottom: 20px;
+
+  img {
+    border-radius: 50%;
+  }
+
 }
 
 .best-team__title {
   padding-bottom: 100px;
+}
+
+.best-team__sub-title {
+  font-size: 40px;
 }
 
 .best-team .sub-title {

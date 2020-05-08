@@ -55,6 +55,10 @@ img {
 
 .section {
   padding: 90px 0;
+
+  @include phones {
+    padding: 60px 0;
+  }
 }
 
 .title {
