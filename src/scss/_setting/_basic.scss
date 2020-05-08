@@ -26,6 +26,7 @@ p {
 
 a {
   text-decoration: none;
+  color: $white;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -53,7 +54,7 @@ img {
 }
 
 .section {
-  margin: 90px 0;
+  padding: 90px 0;
 }
 
 .title {
@@ -108,6 +109,15 @@ img {
   &--white:hover {
     border: 1px solid $black;
     background-color: $white;
+  }
+
+  &--white-second {
+    background-color: $white;
+    color: $black;
+  }
+
+  &--white-second:hover {
+    background-color: $wheat;
   }
 
 }

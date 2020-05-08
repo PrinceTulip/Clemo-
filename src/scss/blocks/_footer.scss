@@ -1,0 +1,164 @@
+.footer {
+  background: $black;
+  color: $white;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__info {
+  width: 40%;
+  margin-right: 127px;
+}
+
+.footer__form {
+  width: 60%;
+}
+
+.footer__title {
+  margin-bottom: 80px;
+}
+
+.footer__address {
+  margin-bottom: 45px;
+  padding-left: 38px;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -184px 0px;
+}
+
+.footer__number {
+  margin-bottom: 45px;
+  padding-left: 38px;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -147px -98px;
+}
+
+.footer__link {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 45px;
+  padding-left: 38px;
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background: url("../img/sprite.png");
+    background-position: -98px -94px;
+  }
+}
+
+.footer__list {
+  display: flex;
+  align-items: center;
+}
+
+.footer__list-item {
+  margin-right: 40px;
+}
+
+.footer__list-link-block {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 8px;
+    left: -8px;
+    width: 40px;
+    height: 40px;
+    background-color: $white;
+    border-radius: 50%;
+    transition: 0.3s;
+
+  }
+
+  &:hover:before {
+    background-color: $skin;
+    transition: 0.3s;
+  }
+
+}
+
+.footer__list-link {
+  position: relative;
+  display: inline-block;
+  background: url("../img/sprite.png") no-repeat;
+  font-size: 0;
+  width: 25px;
+  height: 25px;
+
+  &--fb {
+    background-position: -142px 0px;
+  }
+
+  &--tw {
+    background-position: -48px -95px;
+  }
+
+  &--gogle {
+    background-position: -97px -46px;
+  }
+
+  &--pin {
+    background-position: 0px -50px;
+  }
+
+  &--inst {
+    background-position: -49px 0px;
+  }
+
+}
+
+.modal-form__input {
+  display: block;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
+  border: none;
+  border-bottom: 1px solid #333333;
+  outline: none;
+  width: 220%;
+  background: transparent;
+  color: rgba(255, 255, 255,  0.3);
+
+
+  &:focus {
+    border-bottom: 1px solid $white;
+    color: $white;
+  }
+
+  @include placeholder {
+    color: rgba(255, 255, 255,  0.3);
+    text-overflow:ellipsis;
+  }
+
+}
+
+.modal-form__text-area {
+  resize: none;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #333333;
+  outline: none;
+  color: rgba(255, 255, 255,  0.3);
+  height: 157px;
+  width: 220%;
+
+
+  &:focus {
+    border-bottom: 1px solid $white;
+    color: $white;
+  }
+}
+
+.modal__btn {
+  width: 170px;
+  margin-top: 50px;
+}
+
+

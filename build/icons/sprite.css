@@ -1,0 +1,96 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-Envelope {
+  background-image: url(sprite.png);
+  background-position: -98px -99px;
+  width: 16px;
+  height: 12px;
+}
+.icon-Instagram {
+  background-image: url(sprite.png);
+  background-position: -49px 0px;
+  width: 24px;
+  height: 25px;
+}
+.icon-Pin {
+  background-image: url(sprite.png);
+  background-position: -184px 0px;
+  width: 12px;
+  height: 16px;
+}
+.icon-facebook {
+  background-image: url(sprite.png);
+  background-position: -147px 0px;
+  width: 12px;
+  height: 24px;
+}
+.icon-fb--white {
+  background-image: url(sprite.png);
+  background-position: -147px -49px;
+  width: 12px;
+  height: 24px;
+}
+.icon-gogl--white {
+  background-image: url(sprite.png);
+  background-position: -49px -50px;
+  width: 24px;
+  height: 21px;
+}
+.icon-google_plus {
+  background-image: url(sprite.png);
+  background-position: -98px -50px;
+  width: 24px;
+  height: 21px;
+}
+.icon-iPhone {
+  background-image: url(sprite.png);
+  background-position: -147px -98px;
+  width: 12px;
+  height: 16px;
+}
+.icon-inst--white {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 24px;
+  height: 25px;
+}
+.icon-pin--white {
+  background-image: url(sprite.png);
+  background-position: -98px 0px;
+  width: 24px;
+  height: 24px;
+}
+.icon-pinterest {
+  background-image: url(sprite.png);
+  background-position: 0px -50px;
+  width: 24px;
+  height: 24px;
+}
+.icon-tw--white {
+  background-image: url(sprite.png);
+  background-position: 0px -99px;
+  width: 24px;
+  height: 20px;
+}
+.icon-twitter {
+  background-image: url(sprite.png);
+  background-position: -49px -99px;
+  width: 24px;
+  height: 20px;
+}
