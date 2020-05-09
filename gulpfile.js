@@ -148,8 +148,6 @@ exports.fonts = fonts;
 //exports.svgSpriteBuild = svgSpriteBuild;
 exports.spritesPng = spritesPng;
 
-
-
 gulp.task('build', gulp.series(
     clean,
     styles,

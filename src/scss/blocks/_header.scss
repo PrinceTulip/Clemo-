@@ -1,5 +1,10 @@
 .header {
-  padding: 63px 0 70px 0;
+  border-bottom: 1px solid transparent;
+  position: fixed;
+  width: 100%;
+  padding: 30px 0;
+  background-color: white;
+  z-index: 50;
 }
 
 .header-row {
@@ -7,3 +12,6 @@
   align-items: center;
 }
 
+.header--border {
+  border-bottom: 1px solid #d8d8d8;
+}

@@ -102,6 +102,7 @@ img {
   font-weight: 300;
   cursor: pointer;
   border: transparent;
+  transition: 0.3s;
 
   &:hover {
     background-color: $skin;
@@ -130,7 +131,8 @@ img {
   }
 
   &--white-second:hover {
-    background-color: $wheat;
+    background-color: $skin;
   }
 
 }
+
