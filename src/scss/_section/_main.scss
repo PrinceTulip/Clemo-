@@ -54,6 +54,10 @@
       left: 47%;
       bottom: 32px;
     }
+
+    @include phones {
+      padding-bottom: 30px;
+    }
   }
 
 }
@@ -81,23 +85,34 @@
 
 
 .main-item--order-second {
-  order: 5;
 
-  &:first-child {
-    margin-right: 0;
+  @include laptop {
+    order: 4;
+
+    &:first-child {
+      margin-right: 45px;
+    }
+
+  }
+
+  @include tablets {
+    order: 5;
   }
 
 }
 
 .main-item--order-first {
-  order: 4;
 
-  &:last-child {
+  @include laptop {
+    order: 5;
+  }
+
+  @include tablets {
+    order: 4;
+  }
+
+  &:first-child {
     margin-right: 95px;
-
-    @include laptop {
-      margin-right: 45px;
-    }
   }
 
 }

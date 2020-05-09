@@ -35,7 +35,27 @@ window.addEventListener('DOMContentLoaded', () => {
       waitForAnimate: false,
       slidesToShow: 4,
       slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 490,
+          settings: {
+            slidesToShow: 1
+          }
+        }
 
+      ]
     });
   });
 
@@ -51,6 +71,26 @@ window.addEventListener('DOMContentLoaded', () => {
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplaySpeed: 3000,
+      responsive: [
+        {
+          breakpoint: 849,
+          settings: {
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     });
   });
 
