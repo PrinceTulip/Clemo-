@@ -473,7 +473,8 @@ img {
   border-radius: 30px;
   font-weight: 300;
   cursor: pointer;
-  border: transparent; }
+  border: transparent;
+  transition: 0.3s; }
   .btn:hover {
     background-color: #ffcb93;
     color: #000;
@@ -1015,7 +1016,7 @@ img {
       display: block;
       position: absolute;
       right: 5px;
-      top: 63px;
+      top: 30px;
       padding-right: 10px; } }
 
 .header__burger-button {
@@ -1111,8 +1112,12 @@ img {
     width: 50%; }
 
 .header {
-  padding: 63px 0 70px 0;
-  border-bottom: 1px solid transparent; }
+  border-bottom: 1px solid transparent;
+  position: fixed;
+  width: 100%;
+  padding: 30px 0;
+  background-color: white;
+  z-index: 50; }
 
 .header-row {
   justify-content: space-between;
