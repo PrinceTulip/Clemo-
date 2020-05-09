@@ -1,9 +1,25 @@
 .row-count-block {
   justify-content: space-around;
+
+  @include phones {
+    display: block;
+  }
+}
+
+.count-block__item {
+
+  @include phones {
+    margin-bottom: 30px;
+  }
+
 }
 
 .count-block {
   padding: 96px 0;
+
+  @include phones {
+    padding: 56px 0;
+  }
 }
 
 .count-block {
@@ -13,10 +29,19 @@
     margin-bottom: 36px;
     font-weight: 700;
 
+    @include phones {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
     &:after {
       bottom: -17px;
       left: 32%;
       width: 50px;
     }
   }
+}
+
+.count-block__text {
+  text-align: center;
 }

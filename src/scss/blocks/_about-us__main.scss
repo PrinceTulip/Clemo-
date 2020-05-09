@@ -27,9 +27,17 @@
     font-size: 40px;
     margin-left: 40px;
 
+    @include laptop {
+      margin-left: 0;
+    }
+
     &:after {
       left: 3px;
       top: -38px;
+
+      @include laptop {
+        display: none;
+      }
     }
   }
 }
