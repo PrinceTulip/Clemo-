@@ -16,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
     $('.promo-slider').slick({
       arrows: false,
       dots: true,
+      autoHeight: true,
       autoplay: true,
       pauseOnFocus: true,
       pauseOnHover: true,
@@ -96,8 +97,6 @@ window.addEventListener('DOMContentLoaded', () => {
       ]
     });
   });
-
-
 
   const menu = document.querySelector('.header-navigation__list'),
       menuItem = document.querySelectorAll('.header-navigation__list-item'),

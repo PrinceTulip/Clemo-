@@ -492,7 +492,7 @@ img {
     background-color: #fff;
     color: #000; }
   .btn--white-second:hover {
-    background-color: #ffe1bd; }
+    background-color: #ffcb93; }
 
 .best-team-row {
   padding-bottom: 50px;
@@ -964,7 +964,7 @@ img {
   .footer__list-link--pin {
     background-position: 0px -50px; }
   .footer__list-link--inst {
-    background-position: -49px 0px; }
+    background-position: -48px 0px; }
 
 .modal-form__input {
   display: block;
