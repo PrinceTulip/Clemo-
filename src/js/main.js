@@ -102,7 +102,7 @@ window.addEventListener('DOMContentLoaded', () => {
     $('.instagram-slider').slick({
       arrows: false,
       dots: false,
-      // autoplay: true,
+      autoplay: true,
       pauseOnFocus: true,
       pauseOnHover: true,
       pauseOnDotsHover: true,

@@ -770,19 +770,18 @@ img {
   @media (max-width: 490px) {
     .count-block {
       padding: 56px 0; } }
-
-.count-block .sub-title {
-  text-align: center;
-  margin-bottom: 36px;
-  font-weight: 700; }
-  @media (max-width: 490px) {
-    .count-block .sub-title {
-      font-size: 30px;
-      margin-bottom: 15px; } }
-  .count-block .sub-title:after {
-    bottom: -17px;
-    left: 32%;
-    width: 50px; }
+  .count-block .sub-title {
+    text-align: center;
+    margin-bottom: 36px;
+    font-weight: 700; }
+    @media (max-width: 490px) {
+      .count-block .sub-title {
+        font-size: 30px;
+        margin-bottom: 15px; } }
+    .count-block .sub-title:after {
+      bottom: -17px;
+      left: 32%;
+      width: 50px; }
 
 .count-block__text {
   text-align: center; }
