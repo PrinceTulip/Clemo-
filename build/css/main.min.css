@@ -834,11 +834,11 @@ img {
       bottom: -61%; } }
   @media (max-width: 490px) {
     .client-says-slider .slick-dots {
-      right: 7%;
+      right: 16%;
       bottom: -40%; } }
   @media (max-width: 320px) {
     .client-says-slider .slick-dots {
-      right: -5%; } }
+      right: 0; } }
 
 .client-says-slider .slick-dots li {
   list-style: none;
@@ -1111,7 +1111,8 @@ img {
     width: 50%; }
 
 .header {
-  padding: 63px 0 70px 0; }
+  padding: 63px 0 70px 0;
+  border-bottom: 1px solid transparent; }
 
 .header-row {
   justify-content: space-between;

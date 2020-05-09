@@ -15,12 +15,12 @@
   }
 
   @include phones {
-    right: 7%;
+    right: 16%;
     bottom: -40%;
   }
 
   @include small-phones {
-    right: -5%;
+    right: 0;
   }
 }
 
