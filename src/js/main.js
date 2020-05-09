@@ -98,6 +98,45 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  $(document).ready(function(){
+    $('.instagram-slider').slick({
+      arrows: false,
+      dots: false,
+      // autoplay: true,
+      pauseOnFocus: true,
+      pauseOnHover: true,
+      pauseOnDotsHover: true,
+      waitForAnimate: false,
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      speed: 4000,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          }
+        },
+        {
+          breakpoint: 490,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }
+
+      ]
+    });
+  });
+
   const menu = document.querySelector('.header-navigation__list'),
       menuItem = document.querySelectorAll('.header-navigation__list-item'),
       hamburger = document.querySelector('.header__burger-button');

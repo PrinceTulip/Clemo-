@@ -494,6 +494,24 @@ img {
   .btn--white-second:hover {
     background-color: #ffcb93; }
 
+.row-instagram {
+  justify-content: center;
+  padding: 0 5px; }
+
+.instagram__title {
+  margin-bottom: 89px; }
+
+.instagram-slider {
+  margin-bottom: 50px; }
+
+.instagram__button-block {
+  text-align: center; }
+  .instagram__button-block .btn {
+    padding: 15px 61px; }
+
+.instagram__img {
+  text-align: center; }
+
 .best-team-row {
   padding-bottom: 50px;
   justify-content: center; }
@@ -736,6 +754,55 @@ img {
 
 .best-work__block {
   text-align: center; }
+
+.row-count-block {
+  justify-content: space-around; }
+
+.count-block {
+  padding: 96px 0; }
+
+.count-block .sub-title {
+  text-align: center;
+  margin-bottom: 36px;
+  font-weight: 700; }
+  .count-block .sub-title:after {
+    bottom: -17px;
+    left: 32%;
+    width: 50px; }
+
+.header-about-us {
+  border-bottom: 1px solid #d8d8d8; }
+
+.sub-title-about-us .sub-title {
+  font-size: 0;
+  padding-bottom: 47px; }
+
+.instagram-slider {
+  min-width: 0; }
+
+.instagram-slider .slick-slide {
+  margin-right: 10px; }
+
+.main-row-about-us {
+  margin-bottom: 30px; }
+
+.main-about-us {
+  margin-top: 85px;
+  border-bottom: 1px solid #d8d8d8; }
+
+.main__desc-about-us p {
+  margin-bottom: 40px; }
+
+.main__sub-title-about-us .sub-title {
+  padding-bottom: 47px;
+  font-size: 0; }
+
+.main__sub-title-about-us--ml .sub-title {
+  font-size: 40px;
+  margin-left: 40px; }
+  .main__sub-title-about-us--ml .sub-title:after {
+    left: 3px;
+    top: -38px; }
 
 .best-team-slider {
   position: relative;

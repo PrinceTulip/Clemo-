@@ -1,0 +1,22 @@
+.row-count-block {
+  justify-content: space-around;
+}
+
+.count-block {
+  padding: 96px 0;
+}
+
+.count-block {
+
+  .sub-title {
+    text-align: center;
+    margin-bottom: 36px;
+    font-weight: 700;
+
+    &:after {
+      bottom: -17px;
+      left: 32%;
+      width: 50px;
+    }
+  }
+}
