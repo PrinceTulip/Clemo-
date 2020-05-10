@@ -1346,6 +1346,9 @@ img {
 .promo-slider .slick-dots .slick-active button {
   background-color: #000; }
 
+.related-works .slick-arrow {
+  z-index: -1; }
+
 .main-services {
   margin-top: 85px;
   border-bottom: 1px solid #d8d8d8; }
