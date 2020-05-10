@@ -1,0 +1,106 @@
+.golfino-awards-slider {
+  min-width: 0;
+  position: relative;
+}
+
+.golfino-awards__count {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+  color: #656565;
+  transform: translateY(-16px);
+
+}
+
+.golfino-awards-slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.golfino-awards-slider .slick-dots li {
+  list-style: none;
+  margin-right: 17px;
+}
+
+.golfino-awards-slider .slick-dots button {
+  font-size: 0;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1px solid $black;
+  background: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.golfino-awards-slider .slick-dots .slick-active button {
+  background-color: $black;
+}
+
+.golfino-awards-slider .slick-arrow {
+  position: absolute;
+  display: inline-block;
+  z-index: 10;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  color: $gray;
+  text-transform: lowercase;
+}
+
+.golfino-awards-slider .slick-arrow.slick-prev {
+  background: transparent;
+  left: 42%;
+  top: -140px;
+  border: none;
+
+  @media (max-width: 992px) {
+    left: 37%;
+  }
+
+  @media (max-width: 544px) {
+    left: 27%;
+  }
+
+  @media (max-width: 418px) {
+    left: 17%;
+  }
+
+
+  &:hover {
+    border-color: $white;
+    transition: 0.3s;
+  }
+
+}
+
+.golfino-awards-slider .slick-arrow.slick-next {
+  right:  45%;
+  top: -140px;
+  background: transparent;
+  border: none;
+
+  @media (max-width: 992px) {
+    right: 40%;
+  }
+
+
+
+
+  &:hover {
+    border-color: $white;
+    transition: 0.3s;
+  }
+
+}
+
+
+
+
+
+
