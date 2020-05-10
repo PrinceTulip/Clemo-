@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Clemo</title>
+  <link rel="stylesheet" href="css/main.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+
+  <header class="header header--border">
+    <div class="container">
+      <div class="row header-row">
+        <div class="header__logo">
+          <img src="img/clemo.png" alt="logo-img">
+        </div>
+        <nav class="header-navigation">
+          <ul class="header-navigation__list">
+            <li class="header-navigation__item">
+              <a href="#" class="header-navigation__link">
+                about us
+              </a>
+            </li>
+            <li class="header-navigation__item">
+              <a href="#" class="header-navigation__link">
+                services</a>
+            </li>
+            <li class="header-navigation__item">
+              <a href="#" class="header-navigation__link">works </a>
+            </li>
+            <li class="header-navigation__item">
+              <a href="#" class="header-navigation__link">blog</a>
+            </li>
+            <li class="header-navigation__item">
+              <a href="#" class="header-navigation__link">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="header__burger">
+      <button class="header__burger-button"></button>
+    </div>
+  </header>
+
+  <section class="best-work best-work-catalog">
+    <div class="container">
+      <h3 class="best-work__title title">works</h3>
+      <div class="best-work__tabs">
+        <a class="best-work__tab" data-work-filter="all" href="#">all</a>
+        <a class="best-work__tab" data-work-filter="creative-kitchen" href="#">creative kitchen</a>
+        <a class="best-work__tab" data-work-filter="art-installation" href="#">art installation</a>
+        <a class="best-work__tab" data-work-filter="print-design" href="#">print design</a>
+      </div>
+      <div class="row best-work-row">
+        <div class="best-work__item all creative-kitchen best-work__item--1"></div>
+        <div class="best-work__item all creative-kitchen best-work__item--2 best-work__item--big"></div>
+        <div class="best-work__item all creative-kitchen print-design best-work__item--3"></div>
+        <div class="best-work__item all creative-kitchen print-design best-work__item--4 best-work__item--big"></div>
+        <div class="best-work__item all art-installation best-work__item--5 best-work__item--big"></div>
+        <div class="best-work__item all art-installation best-work__item--6"></div>
+        <div class="best-work__item all creative-kitchen best-work__item--1"></div>
+        <div class="best-work__item all creative-kitchen best-work__item--2 best-work__item--big"></div>
+        <div class="best-work__item all creative-kitchen print-design best-work__item--3"></div>
+        <div class="best-work__item all creative-kitchen print-design best-work__item--4 best-work__item--big"></div>
+        <div class="best-work__item all art-installation best-work__item--5 best-work__item--big"></div>
+        <div class="best-work__item all art-installation best-work__item--6"></div>
+      </div>
+      <div class="best-work__filter"></div>
+      <div class="best-work__block">
+        <button class="btn best-work__btn">learn more</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="sub-footer sub-footer--bordered">
+    <div class="container">
+      <div class="row row-sub-footer">
+        <p class="sub-footer__copyright">&copy; 2020 clemo</p>
+        <p class="sub-footer__rights">all rights deserved</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/bundle.js"></script>
+</div>
+</body>
+</html>

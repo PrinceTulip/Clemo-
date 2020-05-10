@@ -1,10 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Clemo</title>
+  <link rel="stylesheet" href="css/main.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+<div class="wrapper">
+
+  <header class="header header--border">
+    <div class="container">
+      <div class="row header-row">
+        <div class="header__logo">
+          <img src="img/clemo.png" alt="logo-img">
+        </div>
+        <nav class="header-navigation">
+          <ul class="header-navigation__list">
+            <li class="header-navigation__item">
+              <a href="#" class="header-navigation__link">
+                about us
+              </a>
+            </li>
+            <li class="header-navigation__item">
+              <a href="#" class="header-navigation__link header-navigation__link--active">
+                services
+              </a>
+            </li>
+            <li class="header-navigation__item">
+              <a href="#" class="header-navigation__link">works </a>
+            </li>
+            <li class="header-navigation__item">
+              <a href="#" class="header-navigation__link">blog</a>
+            </li>
+            <li class="header-navigation__item">
+              <a href="#" class="header-navigation__link">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="header__burger">
+      <button class="header__burger-button"></button>
+    </div>
+  </header>
+
+  <section class="section main main-services">
+    <div class="container">
+      <div class="main__title">
+        <h3 class="main__title title">what we do?</h3>
+      </div>
+      <div class="row main-row main-row-services">
+        <div class="main__item">
+          <img class="main__item-img" src="img/kitchen.jpg" alt="item-img">
+        </div>
+        <div class="main__item">
+          <div class="main__sub-title">
+            <span class="main__span">creative</span>
+            <h3 class="sub-title">kitchen</h3>
+          </div>
+          <div class="main__desc">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+            rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+            explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+            dolores eos qui ratione voluptatem sequi nesciunt.
+          </div>
+          <button class="btn btn--white main__button">learn more</button>
+        </div>
+      </div>
+      <div class="row main-row">
+        <div class="main__item main-item--order-second">
+          <div class="main__sub-title">
+            <span class="main__span">art</span>
+            <h3 class="sub-title">installation</h3>
+          </div>
+          <div class="main__desc">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+            rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+            explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+            dolores eos qui ratione voluptatem sequi nesciunt.
+          </div>
+          <button class="btn btn--white main__button">learn more</button>
+        </div>
+        <div class="main__item main-item--order-first">
+          <img class="main__item-img" src="img/installation.jpg" alt="item-img">
+        </div>
+      </div>
+      <div class="row main-row">
+        <div class="main__item">
+          <img class="main__item-img" src="img/design.jpg" alt="item-img">
+        </div>
+        <div class="main__item">
+          <div class="main__sub-title">
+            <span class="main__span">print</span>
+            <h3 class="sub-title">design</h3>
+          </div>
+          <div class="main__desc">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+            rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+            explicabo.
+
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+            dolores eos qui ratione voluptatem sequi nesciunt.
+          </div>
+          <button class="btn btn--white main__button">learn more</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sub-footer">
+    <div class="container">
+      <div class="row row-sub-footer">
+        <p class="sub-footer__copyright">&copy; 2020 clemo</p>
+        <p class="sub-footer__rights">all rights deserved</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/bundle.js"></script>
+</div>
 </body>
 </html>
