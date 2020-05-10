@@ -60,3 +60,11 @@
   }
 
 }
+
+.header-navigation__link--active {
+
+  &::before {
+    width: 50%;
+  }
+
+}
