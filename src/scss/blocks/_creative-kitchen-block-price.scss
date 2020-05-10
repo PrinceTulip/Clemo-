@@ -1,0 +1,78 @@
+.row-block-price {
+  align-items: center;
+  padding: 0 60px;
+
+  @include laptop {
+    padding: 0;
+  }
+}
+
+.block-price {
+  background-color: $black;
+  color: $white;
+  padding: 85px 0;
+
+}
+
+.row-block-price {
+  justify-content: space-around;
+
+  @include laptop {
+   flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+
+.block-price {
+
+  &-sub-title {
+
+    @include laptop {
+      margin-bottom: 30px;
+    }
+  }
+
+  .sub-title {
+    font-size: 30px;
+    
+    &:after {
+      background-color: $white;
+      bottom: 14px;
+      left: 134.5%;
+
+      @media (max-width: 1114px) {
+        display: none;
+      }
+    }
+  }
+
+
+}
+
+.block-price__money {
+  display: flex;
+  align-items: center;
+
+  @include laptop {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 390px){
+    flex-direction: column;
+
+  }
+}
+
+.block-price__dollars {
+  font-size: 40px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.block-price__event {
+  font-size: 30px;
+  font-weight: 300;
+  color: $gray;
+}
