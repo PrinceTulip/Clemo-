@@ -3,22 +3,16 @@ const slick = require('slick-carousel');
 const $ = require('jquery');
 
 window.addEventListener('DOMContentLoaded', () => {
-
-  const grid = document.querySelector('.best-work-row');
-  const grid2 = document.querySelector('.best-work__filter');
-
-  const msnry = new Masonry(grid, {
-    // options...
-    itemSelector: '.best-work__item',
-    columnWidth: '.best-work__item',
-    percentPosition: true
-  });
-  const msnry2 = new Masonry(grid2, {
-    // options...
-    itemSelector: '.best-work__item',
-    columnWidth: '.best-work__item',
-    percentPosition: true
-  });
+  try {
+    const grid = document.querySelector('.best-work-row');
+    const msnry = new Masonry(grid, {
+      // options...
+      itemSelector: '.best-work__item',
+      columnWidth: '.best-work__item',
+      percentPosition: true
+    });
+  } catch (e) {
+  }
 
   $(document).ready(function () {
     $('.promo-slider').slick({
@@ -162,53 +156,58 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   const tabs = () => {
-    const bindTabs = (triggerSelector, contentSelector, activeSelector, filterSelector, addedFilteredSelector) => {
-      const trigger = document.querySelectorAll(triggerSelector);
-      const content = document.querySelector(contentSelector);
-      const filteredWrap = document.querySelector(addedFilteredSelector);
-      const active = activeSelector;
-      const child = [...content.children];
+    const bindTabs = (triggerSelector, contentSelector, activeSelector, display, filterSelector, addedFilteredSelector) => {
+      try {
+        const trigger = document.querySelectorAll(triggerSelector);
+        const content = document.querySelector(contentSelector);
+        const filteredWrap = document.querySelector(addedFilteredSelector);
+        const active = activeSelector;
+        const child = [...content.children];
 
-      trigger.forEach((item, i) => {
-        item.addEventListener('click', (e) => {
-          const filterName = item.dataset[filterSelector];
-          hideTabs();
-          e.preventDefault();
-          showTabs(i, filterName);
-        })
-      });
-
-      const hideTabs = () => {
-        trigger.forEach((item) => {
-          item.classList.remove(active);
+        trigger.forEach((item, i) => {
+          item.addEventListener('click', (e) => {
+            e.preventDefault();
+            const filterName = item.dataset[filterSelector];
+            hideTabs();
+            e.preventDefault();
+            showTabs(i, filterName);
+          })
         });
-        child.forEach((item) => {
-          item.style.display = 'none';
-        })
-      };
 
-      const filterContent = (i, filterName) => {
-        return child.filter((item) => {
-          if (item.classList.contains(filterName)) {
-            return item;
-          }
-        });
-      };
+        const hideTabs = () => {
+          trigger.forEach((item) => {
+            item.classList.remove(active);
+          });
+          child.forEach((item) => {
+            item.style.display = 'none';
+          })
+        };
 
-      const showTabs = (i, filterName) => {
-        trigger[i].classList.add(active);
-        const filtered = filterContent(i, filterName);
+        const filterContent = (i, filterName) => {
+          return child.filter((item) => {
+            if (item.classList.contains(filterName)) {
+              return item;
+            }
+          });
+        };
 
-        filtered.forEach((item) => {
-          item.style.display = 'block';
-        })
-      };
+        const showTabs = (i, filterName) => {
+          trigger[i].classList.add(active);
+          const filtered = filterContent(i, filterName);
 
-      hideTabs();
-      showTabs(0, 'all')
+          filtered.forEach((item) => {
+            item.style.display = display;
+          })
+        };
+
+        hideTabs();
+        showTabs(0, 'all')
+      } catch (e) {
+      }
     };
 
-    bindTabs('.best-work__tab', '.best-work-row', 'best-work__tab--active', 'workFilter');
+    bindTabs('.best-work__tab', '.best-work-row', 'tab--active', 'block', 'workFilter');
+    bindTabs('.main__tab', '.main__content-blog', 'tab--active', 'flex', 'filterBlog');
   };
 
   tabs();

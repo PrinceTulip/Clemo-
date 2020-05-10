@@ -623,6 +623,9 @@ img {
     .main-row {
       margin-bottom: 80px; } }
 
+.main__content-blog {
+  margin-bottom: 51px; }
+
 .main__item {
   width: 50%;
   margin-right: 95px; }
@@ -636,9 +639,14 @@ img {
       width: 100%;
       text-align: center; } }
 
+.main-blog__date {
+  margin-bottom: 15px; }
+
 .main__title {
   text-align: center;
   margin-bottom: 90px; }
+  .main__title--mt {
+    margin-top: 80px; }
 
 .main__span {
   font-size: 30px;
@@ -683,6 +691,30 @@ img {
   .main-item--order-second {
     order: 5; } }
 
+.main-blog_wrap {
+  position: relative;
+  margin-bottom: 45px;
+  padding-bottom: 35px; }
+  .main-blog_wrap:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 55px;
+    height: 2px;
+    background-color: #000; }
+    @media (max-width: 768px) {
+      .main-blog_wrap:after {
+        display: none; } }
+  .main-blog_wrap .sub-title {
+    padding-bottom: 12px; }
+    .main-blog_wrap .sub-title::after {
+      display: none; }
+  @media (max-width: 768px) {
+    .main-blog_wrap {
+      padding-bottom: 0;
+      margin-bottom: 25px; } }
+
 @media (max-width: 992px) {
   .main-item--order-first {
     order: 5; } }
@@ -693,6 +725,14 @@ img {
 
 .main-item--order-first:first-child {
   margin-right: 95px; }
+
+.main__btn-blog {
+  display: block;
+  width: 170px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  text-align: center; }
 
 .promo {
   background-color: #ffe1bd;
@@ -758,18 +798,6 @@ img {
     .best-work__item {
       width: 100%;
       margin-right: 0; } }
-
-.best-work__tabs {
-  margin-bottom: 93px;
-  text-align: center; }
-
-.best-work__tab {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 22px;
-  color: #989898; }
-  .best-work__tab--active {
-    color: #000; }
 
 .best-work__item {
   margin-bottom: 30px; }
@@ -1364,3 +1392,21 @@ img {
   font-size: 13px;
   font-weight: 300;
   color: #989898; }
+
+.tabs {
+  margin-bottom: 93px;
+  text-align: center; }
+
+.tab {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 22px;
+  color: #989898; }
+  .tab--active {
+    color: #000; }
+  @media (max-width: 575px) {
+    .tab {
+      display: block;
+      margin-bottom: 20px;
+      font-size: 22px;
+      line-height: 26px; } }
