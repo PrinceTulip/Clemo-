@@ -1,0 +1,56 @@
+.design-block__title {
+  margin-top: 80px;
+}
+
+.design-block__date {
+  margin: 0 auto;
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+
+.design-block__img  {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.main__item-design {
+  width: 83%;
+  margin-bottom: 40px;
+}
+
+.row-design {
+  justify-content: center;
+}
+
+.design__small-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+
+  h3 {
+    font-weight: 300;
+  }
+}
+
+.design__text-ml {
+  position: relative;
+  padding-left: 60px;
+
+  @include phones {
+    padding-left: 0;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    width: 58px;
+    height: 2px;
+    top: 47px;
+    left: -34px;
+    background-color: $black;
+
+    @include phones {
+      display: none;
+    }
+  }
+}

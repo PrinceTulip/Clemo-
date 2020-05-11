@@ -668,7 +668,6 @@ img {
 
 .main__desc {
   font-size: 18px;
-  color: #989898;
   font-weight: 300;
   margin-bottom: 50px; }
   @media (max-width: 992px) {
@@ -1012,6 +1011,53 @@ img {
   font-weight: 300;
   color: #989898; }
 
+.related-posts .slick-arrow {
+  z-index: -1; }
+
+.design-block__title {
+  margin-top: 80px; }
+
+.design-block__date {
+  margin: 0 auto;
+  font-weight: 600;
+  margin-bottom: 100px; }
+
+.design-block__img {
+  margin: 0 auto;
+  margin-bottom: 50px; }
+
+.main__item-design {
+  width: 83%;
+  margin-bottom: 40px; }
+
+.row-design {
+  justify-content: center; }
+
+.design__small-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px; }
+  .design__small-title h3 {
+    font-weight: 300; }
+
+.design__text-ml {
+  position: relative;
+  padding-left: 60px; }
+  @media (max-width: 490px) {
+    .design__text-ml {
+      padding-left: 0; } }
+  .design__text-ml:after {
+    position: absolute;
+    content: '';
+    width: 58px;
+    height: 2px;
+    top: 47px;
+    left: -34px;
+    background-color: #000; }
+    @media (max-width: 490px) {
+      .design__text-ml:after {
+        display: none; } }
+
 .footer {
   background: #000;
   color: #fff; }
@@ -1102,6 +1148,9 @@ img {
   @media (max-width: 800px) {
     .footer__item {
       margin-right: 18px; } }
+  @media (max-width: 352px) {
+    .footer__item {
+      margin-right: 7px; } }
 
 .footer__list-link {
   position: relative;
@@ -1113,19 +1162,19 @@ img {
   .footer__list-link--fb {
     width: 12px;
     height: 24px;
-    background-position: -142px 0px; }
+    background-position: -147px 0px; }
     .footer__list-link--fb-white {
       background-position: -147px -49px; }
   .footer__list-link--tw {
     width: 24px;
     height: 20px;
-    background-position: -48px -95px; }
+    background-position: -49px -99px; }
     .footer__list-link--tw-white {
       background-position: 0px -99px; }
   .footer__list-link--gogle {
     width: 24px;
     height: 21px;
-    background-position: -97px -46px; }
+    background-position: -96px -50px; }
     .footer__list-link--gogle-white {
       background-position: -49px -50px; }
   .footer__list-link--pin {
@@ -1137,9 +1186,9 @@ img {
   .footer__list-link--inst {
     width: 24px;
     height: 25px;
-    background-position: -48px 0px; }
+    background-position: -49px 0px; }
     .footer__list-link--inst-white {
-      background-position: 0px 0px; }
+      background-position: 0 0; }
 
 .modal-form__input {
   display: block;
