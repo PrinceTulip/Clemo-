@@ -224,7 +224,7 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     };
 
-    bindTabs('.best-work__tab', '.best-work-row', 'tab--active', 'block', 'workFilter');
+    bindTabs('.best-work__tab', '.best-work-row--works', 'tab--active', 'block', 'workFilter');
     bindTabs('.main__tab', '.main__content-blog', 'tab--active', 'flex', 'filterBlog');
   };
 
