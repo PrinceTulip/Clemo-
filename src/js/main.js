@@ -3,7 +3,6 @@ const slick = require('slick-carousel');
 const $ = require('jquery');
 
 window.addEventListener('DOMContentLoaded', () => {
-
   try {
     setTimeout(() => {
       document.querySelector('.preloader').style.display = 'none';
