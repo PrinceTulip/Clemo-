@@ -15,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   $(document).ready(function () {
+
     $('.promo-slider').slick({
       arrows: false,
       dots: true,
