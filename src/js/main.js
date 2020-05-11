@@ -139,6 +139,24 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  $(document).ready(function(){
+    $('.golfino-awards-slider').slick({
+      arrows: true,
+      dots: true,
+      autoplay: true,
+      pauseOnFocus: true,
+      pauseOnHover: true,
+      pauseOnDotsHover: true,
+      waitForAnimate: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplaySpeed: 3000,
+    });
+    $(".golfino-awards-slider").on('afterChange', function(event, slick, currentSlide){
+      $("#cp").text(currentSlide + 1);
+    });
+  });
+
   const menu = document.querySelector('.header-navigation__list'),
       menuItem = document.querySelectorAll('.header-navigation__list-item'),
       hamburger = document.querySelector('.header__burger-button');
