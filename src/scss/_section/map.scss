@@ -1,0 +1,9 @@
+#map iframe {
+  width: 100%;
+  min-height: 450px;
+  border: none;
+
+  @include phones {
+    min-height: 200px;
+  }
+}
