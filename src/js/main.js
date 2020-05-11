@@ -3,9 +3,24 @@ const slick = require('slick-carousel');
 const $ = require('jquery');
 
 window.addEventListener('DOMContentLoaded', () => {
+
+  try {
+    setTimeout(() => {
+      document.querySelector('.preloader').style.display = 'none';
+    }, 350)
+  }catch (e) {}
+
   try {
     const grid = document.querySelector('.best-work-row');
+    const grid2 = document.querySelector('.best-work-row--works');
     const msnry = new Masonry(grid, {
+      // options...
+      itemSelector: '.best-work__item',
+      columnWidth: '.best-work__item',
+      percentPosition: true
+    });
+
+    const msnry2 = new Masonry(grid2, {
       // options...
       itemSelector: '.best-work__item',
       columnWidth: '.best-work__item',
@@ -15,6 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   $(document).ready(function () {
+
     $('.promo-slider').slick({
       arrows: false,
       dots: true,
