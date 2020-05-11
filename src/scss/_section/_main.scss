@@ -15,6 +15,10 @@
   }
 }
 
+.main__content-blog {
+  margin-bottom: 51px;
+}
+
 .main__item {
   width: 50%;
   margin-right: 95px;
@@ -33,9 +37,17 @@
   }
 }
 
+.main-blog__date {
+  margin-bottom: 15px;
+}
+
 .main__title {
   text-align: center;
   margin-bottom: 90px;
+
+  &--mt {
+    margin-top: 80px;
+  }
 }
 
 .main__span {
@@ -101,6 +113,39 @@
 
 }
 
+.main-blog_wrap {
+  position: relative;
+  margin-bottom: 45px;
+  padding-bottom: 35px;
+
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 55px;
+    height: 2px;
+    background-color: $black;
+
+    @include tablets {
+      display: none;
+    }
+  }
+
+  .sub-title {
+    padding-bottom: 12px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @include tablets {
+    padding-bottom: 0;
+    margin-bottom: 25px;
+  }
+}
+
 .main-item--order-first {
 
   @include laptop {
@@ -115,4 +160,13 @@
     margin-right: 95px;
   }
 
+}
+
+.main__btn-blog {
+  display: block;
+  width: 170px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  text-align: center;
 }

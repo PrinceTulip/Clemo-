@@ -1,0 +1,21 @@
+.tabs {
+  margin-bottom: 93px;
+  text-align: center;
+}
+.tab {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 22px;
+  color: $gray;
+
+  &--active {
+    color: #000;
+  }
+
+  @media (max-width: 575px) {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
