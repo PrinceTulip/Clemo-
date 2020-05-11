@@ -1147,7 +1147,7 @@ img {
     transition: 0.3s; }
   @media (max-width: 800px) {
     .footer__item {
-      margin-right: 18px; } }
+      margin-right: 14px; } }
   @media (max-width: 352px) {
     .footer__item {
       margin-right: 7px; } }
