@@ -611,6 +611,15 @@ img {
   margin-top: 85px;
   border-bottom: 1px solid #d8d8d8; }
 
+.golfino-awards {
+  margin-top: 180px; }
+
+.golfino-awards__title {
+  margin-bottom: 200px; }
+
+.golfino-awards__item img {
+  width: 100%; }
+
 .main-row {
   margin-bottom: 100px; }
   .main-row:last-child {
@@ -1131,6 +1140,8 @@ img {
   height: 40px;
   background-color: #fff;
   border-radius: 50%; }
+  .footer__item--dark {
+    background-color: #000; }
   .footer__item:hover {
     background-color: #ffcb93;
     transition: 0.3s; }
@@ -1140,21 +1151,41 @@ img {
 
 .footer__list-link {
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: url("../img/sprite.png") no-repeat;
-  font-size: 0;
-  width: 25px;
-  height: 25px; }
+  font-size: 0; }
   .footer__list-link--fb {
+    width: 12px;
+    height: 24px;
     background-position: -142px 0px; }
+    .footer__list-link--fb-white {
+      background-position: -147px -49px; }
   .footer__list-link--tw {
+    width: 24px;
+    height: 20px;
     background-position: -48px -95px; }
+    .footer__list-link--tw-white {
+      background-position: 0px -99px; }
   .footer__list-link--gogle {
+    width: 24px;
+    height: 21px;
     background-position: -97px -46px; }
+    .footer__list-link--gogle-white {
+      background-position: -49px -50px; }
   .footer__list-link--pin {
-    background-position: 0px -50px; }
+    background-position: 0px -50px;
+    width: 24px;
+    height: 24px; }
+    .footer__list-link--pin-white {
+      background-position: -98px 0px; }
   .footer__list-link--inst {
+    width: 24px;
+    height: 25px;
     background-position: -48px 0px; }
+    .footer__list-link--inst-white {
+      background-position: 0px 0px; }
 
 .modal-form__input {
   display: block;
@@ -1361,6 +1392,9 @@ img {
 .promo-slider .slick-dots .slick-active button {
   background-color: #000; }
 
+.related-works .slick-arrow {
+  z-index: -1; }
+
 .main-services {
   margin-top: 85px;
   border-bottom: 1px solid #d8d8d8; }
@@ -1393,6 +1427,81 @@ img {
   font-weight: 300;
   color: #989898; }
 
+.golfino-awards-slider {
+  min-width: 0;
+  position: relative; }
+
+.golfino-awards__count {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+  color: #656565;
+  transform: translateY(-16px); }
+
+.golfino-awards-slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px; }
+
+.golfino-awards-slider .slick-dots li {
+  list-style: none;
+  margin-right: 17px; }
+
+.golfino-awards-slider .slick-dots button {
+  font-size: 0;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background: transparent;
+  cursor: pointer; }
+  .golfino-awards-slider .slick-dots button:focus {
+    outline: none; }
+
+.golfino-awards-slider .slick-dots .slick-active button {
+  background-color: #000; }
+
+.golfino-awards-slider .slick-arrow {
+  position: absolute;
+  display: inline-block;
+  z-index: 10;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  color: #989898;
+  text-transform: lowercase; }
+
+.golfino-awards-slider .slick-arrow.slick-prev {
+  background: transparent;
+  left: 42%;
+  top: -140px;
+  border: none; }
+  @media (max-width: 992px) {
+    .golfino-awards-slider .slick-arrow.slick-prev {
+      left: 37%; } }
+  @media (max-width: 544px) {
+    .golfino-awards-slider .slick-arrow.slick-prev {
+      left: 27%; } }
+  @media (max-width: 418px) {
+    .golfino-awards-slider .slick-arrow.slick-prev {
+      left: 17%; } }
+  .golfino-awards-slider .slick-arrow.slick-prev:hover {
+    border-color: #fff;
+    transition: 0.3s; }
+
+.golfino-awards-slider .slick-arrow.slick-next {
+  right: 45%;
+  top: -140px;
+  background: transparent;
+  border: none; }
+  @media (max-width: 992px) {
+    .golfino-awards-slider .slick-arrow.slick-next {
+      right: 40%; } }
+  .golfino-awards-slider .slick-arrow.slick-next:hover {
+    border-color: #fff;
+    transition: 0.3s; }
+
 .tabs {
   margin-bottom: 93px;
   text-align: center; }
@@ -1410,3 +1519,4 @@ img {
       margin-bottom: 20px;
       font-size: 22px;
       line-height: 26px; } }
+
