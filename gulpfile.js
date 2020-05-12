@@ -25,6 +25,7 @@ const browserSync = require('browser-sync').create();
 const source = require("vinyl-source-stream");
 const buffer = require("vinyl-buffer");
 const spritesmith = require('gulp.spritesmith');
+const imagemin = require('gulp-imagemin');
 
 // const config = {
 //   mode: {
@@ -69,11 +70,11 @@ const paths =  {
 
 function styles() {
   return gulp.src(paths.src + 'scss/main.scss')
-      //.pipe(plumber())
+      .pipe(plumber())
       .pipe(sassGlob())
       .pipe(sass()) // { outputStyle: 'compressed' }
-      //.pipe(autoprefixer())
-      //.pipe(cleanCSS())
+      .pipe(autoprefixer())
+      .pipe(cleanCSS())
       .pipe(rename({ suffix: ".min" }))
       .pipe(gulp.dest(paths.build + 'css/'))
 }
@@ -107,6 +108,10 @@ function htmls() {
 }
 function img() {
   return gulp.src(paths.src + 'img/*')
+      // .pipe(imagemin([
+      //  imagemin.mozjpeg({quality: 78, progressive: true}),
+      //  imagemin.optipng({optimizationLevel: 5}),
+      // ]))
       .pipe(gulp.dest(paths.build + 'img'));
 }
 function favicon() {
@@ -156,8 +161,8 @@ gulp.task('build', gulp.series(
     img,
     fonts,
     favicon,
-    spritesPng
-    // gulp.parallel(styles, scripts, htmls, img, fonts)
+    spritesPng,
+    gulp.parallel(styles, scripts, htmls, img, fonts)
 ));
 
 gulp.task('default', gulp.series(

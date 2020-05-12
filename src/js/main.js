@@ -1,13 +1,43 @@
+require('regenerator-runtime');
 const Masonry = require('masonry-layout');
 const slick = require('slick-carousel');
 const $ = require('jquery');
 
+
 window.addEventListener('DOMContentLoaded', () => {
+
   try {
     setTimeout(() => {
       document.querySelector('.preloader').style.display = 'none';
     }, 350)
   }catch (e) {}
+
+
+
+  try {
+    const WOW = require('wow.js');
+
+    const wow = new WOW(
+        {
+          boxClass: 'wow',      // animated element css class (default is wow)
+          animateClass: 'animated', // animation css class (default is animated)
+          offset: 0,          // distance to the element when triggering the animation (default is 0)
+          mobile: true,       // trigger animations on mobile devices (default is true)
+          live: true,       // act on asynchronously loaded content (default is true)
+          callback: function (box) {
+            // the callback is fired every time an animation is started
+            // the argument that is passed in is the DOM node being animated
+          },
+          scrollContainer: null,    // optional scroll container selector, otherwise use window,
+          resetAnimation: true,     // reset animation on end (default is true)
+        }
+    );
+
+    wow.init();
+  } catch (e) {
+
+  }
+
 
   try {
     const grid = document.querySelector('.best-work-row');
@@ -179,6 +209,7 @@ window.addEventListener('DOMContentLoaded', () => {
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('header__burger-button--active');
     menu.classList.toggle('header-navigation__list--active');
+    $('body').toggleClass('lock');
   });
 
   menuItem.forEach(item => {

@@ -2,8 +2,10 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
   <title>Clemo</title>
   <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -65,10 +67,10 @@
         <h3 class="main__title title">about us</h3>
       </div>
       <div class="row main-row main-row-about-us">
-        <div class="main__item main__item-about-us">
+        <div class="main__item main__item-about-us wow fadeInUp" data-wow-delay=0.1s data-wow-offset="200">
           <img class="main__item-img main__item-img-about-us" src="img/hands.jpg" alt="item-img">
         </div>
-        <div class="main__item  main__item-about-us">
+        <div class="main__item  main__item-about-us wow fadeInUp" data-wow-delay=0.1s data-wow-offset="200">
           <div class="main__sub-title main__sub-title-about-us">
             <h3 class="sub-title sub-title-about-us">kitchen</h3>
           </div>
@@ -96,7 +98,7 @@
         </div>
       </div>
       <div class="row main-row main-row-about-us">
-        <div class="main__item main-item--order-second">
+        <div class="main__item main-item--order-second wow fadeInLeft">
           <div class="main__sub-title main__sub-title-about-us main__sub-title-about-us--ml">
             <h3 class="sub-title">
               we create<br>
@@ -113,15 +115,15 @@
   <div class="count-block">
     <div class="container">
       <div class="row row-count-block">
-        <div class="count-block__item">
+        <div class="count-block__item wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=0.2s data-wow-offset="200">
           <p class="sub-title">45</p>
           <p class="count-block__text">project complete</p>
         </div>
-        <div class="count-block__item">
+        <div class="count-block__item wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=0.4s data-wow-offset="200">
           <p class="sub-title">36</p>
           <p class="count-block__text">happy clients</p>
         </div>
-        <div class="count-block__item">
+        <div class="count-block__item wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=0.6s data-wow-offset="200">
           <p class="sub-title">868</p>
           <p class="count-block__text">cups of milk</p>
         </div>
@@ -133,7 +135,7 @@
     <div class="container">
       <h3 class="best-team__title title">best team</h3>
       <div class="row best-team-row">
-        <div class="best-team-slider">
+        <div class="best-team-slider wow fadeInRight" data-wow-offset="200">
           <div class="best-team__item">
             <div class="best-item__img">
               <img data-lazy="img/team-1.jpg" alt="best-item-img">
@@ -196,7 +198,7 @@
   </section>
 
   <section class="section instagram">
-      <h3 class="instagram__title title">instagram</h3>
+      <h3 class="instagram__title title wow flash" data-wow-offset="300">instagram</h3>
       <div class="row row-instagram">
         <div class="instagram-slider">
           <div class="instagram__img">
@@ -251,19 +253,19 @@
           </div>
           <a class=footer__link href="#">hello@clemocreative.com</a>
           <ul class="footer__list">
-            <li class="footer__item">
+            <li class="footer__item wow fadeInLeft" data-wow-duration="0.5s"  data-wow-delay="0.2s">
               <a href="#" class="footer__list-link footer__list-link--fb">fb</a>
             </li>
-            <li class="footer__item">
+            <li class="footer__item wow fadeInLeft" data-wow-duration="0.5s"  data-wow-delay="0.4s">
               <a href="#" class="footer__list-link footer__list-link--tw">tw</a>
             </li>
-            <li class="footer__item">
+            <li class="footer__item wow fadeInLeft" data-wow-duration="0.5s"  data-wow-delay="0.6s">
               <a href="#" class="footer__list-link footer__list-link--gogle">google</a>
             </li>
-            <li class="footer__item">
+            <li class="footer__item wow fadeInLeft" data-wow-duration="0.5s"  data-wow-delay="0.8s">
               <a href="#" class="footer__list-link footer__list-link--pin">pin</a>
             </li>
-            <li class="footer__item">
+            <li class="footer__item wow fadeInLeft" data-wow-duration="0.5s"  data-wow-delay="0.9s">
               <a href="#" class="footer__list-link footer__list-link--inst">inst</a>
             </li>
           </ul>
@@ -273,7 +275,7 @@
             <input class="modal-form__input" name="name" type="text" placeholder="name">
             <input class="modal-form__input" name="phone" placeholder="e-mail">
             <textarea class="modal-form__text-area" placeholder="your message" name="message" id=""></textarea>
-            <button class="modal__btn btn btn--white-second wow bounceInLeft" data-wow-delay="0.8s" type="submit">
+            <button class="modal__btn btn btn--white-second wow fadeInLeft" data-wow-delay="0.3s" type="submit">
               submit
             </button>
           </form>

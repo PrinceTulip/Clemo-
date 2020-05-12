@@ -14,6 +14,7 @@
     z-index: 5;
     transition: 0.6s;
     text-align: center;
+    overflow: auto;
   }
 
   &--active {
@@ -22,8 +23,21 @@
 
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 .header-navigation__item {
   margin-right: 30px;
+
+  @include laptop {
+    margin-right: 15px;
+  }
+
+  @include tablets {
+    margin-right: 0;
+  }
+
 }
 
 .header-navigation__link {
@@ -31,12 +45,21 @@
   display: inline-block;
   color: $gray;
 
+  @include tablets {
+    color: $white;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
 
-    @include tablets {
-      color: $white;
-      font-size: 32px;
-      margin-bottom: 20px;
-    }
+  @media (max-width: 885px) {
+    font-size: 15px;
+  }
+
+  @include phones {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+
 
 
   &::before {
